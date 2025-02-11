@@ -1,0 +1,37 @@
+import java.util.*;
+class Main {
+	public static void sortArray(int[] ar) { 
+		// 45, 1, 98, 41
+		if(ar[0] > ar[1]) {
+			int temp = ar[0];
+			ar[0] = ar[1];
+			ar[1] = temp;
+		}
+		
+		// 1, 45, 98, 41
+		if(ar[1] > ar[2]) {
+			int temp = ar[1];
+			ar[1] = ar[2];
+			ar[2] = temp;
+		}
+		
+		// 1, 45, 98, 41
+		if(ar[2] > ar[3]) {
+			int temp = ar[2];
+			ar[2] = ar[3];
+			ar[3] = temp;
+		}
+		
+		// 1, 45, 41, 98
+		
+	}
+	
+	public static void main(String args[]) {
+		int[] ar = {45, 1, 98, 41};
+		System.out.println(Arrays.toString(ar));	//[5, 1, 98, 41]
+	
+		sortArray(ar);	
+		System.out.println(Arrays.toString(ar));	//[1, 5, 41, 98]
+	}
+}
+

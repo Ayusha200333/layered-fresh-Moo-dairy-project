@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ancMain" prefHeight="702.0" prefWidth="1594.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.controller.SignupController">
+   <children>
+      <ImageView fitHeight="787.0" fitWidth="1427.0" layoutX="253.0">
+         <image>
+            <Image url="@../image/istockphoto-1193860992-1024x1024.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="ancSignUp" layoutX="878.0" prefHeight="787.0" prefWidth="755.0" style="-fx-background-color: #c5d4dd;">
+         <children>
+            <TextField fx:id="txtPsw" layoutX="156.0" layoutY="295.0" prefHeight="45.0" prefWidth="444.0" promptText="Password" />
+            <TextField fx:id="txtEmail" layoutX="156.0" layoutY="508.0" prefHeight="45.0" prefWidth="444.0" promptText="Email" />
+            <TextField fx:id="txtConform" layoutX="156.0" layoutY="397.0" prefHeight="45.0" prefWidth="444.0" promptText="Conform Password" />
+            <Text layoutX="287.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Page" wrappingWidth="182.60986328125">
+               <font>
+                  <Font name="DejaVu Serif Condensed" size="39.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnAcc" layoutX="283.0" layoutY="589.0" mnemonicParsing="false" onAction="#createAccOnAction" prefHeight="33.0" prefWidth="190.0" style="-fx-background-color: gray;" text="Create Account">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtUser" layoutX="156.0" layoutY="195.0" prefHeight="45.0" prefWidth="444.0" promptText="Username" />
+            <ImageView fitHeight="19.0" fitWidth="17.0" layoutX="158.0" layoutY="149.0">
+               <image>
+                  <Image url="@../image/icons8-user-30(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="17.0" layoutX="158.0" layoutY="251.0">
+               <image>
+                  <Image url="@../image/icons8-password-30.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="17.0" layoutX="158.0" layoutY="360.0">
+               <image>
+                  <Image url="@../image/icons8-confirm-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="17.0" layoutX="158.0" layoutY="468.0">
+               <image>
+                  <Image url="@../image/icons8-email-30.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="156.0" layoutY="175.0" prefHeight="3.0" prefWidth="444.0" style="-fx-background-color: gray;" />
+            <AnchorPane layoutX="156.0" layoutY="277.0" prefHeight="3.0" prefWidth="444.0" style="-fx-background-color: gray;" />
+            <AnchorPane layoutX="156.0" layoutY="384.0" prefHeight="3.0" prefWidth="444.0" style="-fx-background-color: gray;" />
+            <AnchorPane layoutX="156.0" layoutY="494.0" prefHeight="3.0" prefWidth="444.0" style="-fx-background-color: gray;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

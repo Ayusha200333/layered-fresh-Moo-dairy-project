@@ -51,4 +51,10 @@ public class ProductBOImpl implements ProductBO {
     public List<String> getAllIds() throws SQLException {
         return productDAO.getAllIds();
     }
+
+    @Override
+    public ProductDTO getProduct(String id) throws SQLException {
+        Product product = productDAO.getProduct(id);
+        return (product != null )? new ProductDTO(product.getProId(),product.getProName(),product.getPrice(),product.getQty()) : null;
+    }
 }

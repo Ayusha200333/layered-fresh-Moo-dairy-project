@@ -89,6 +89,13 @@ public class ProductDAOImpl implements ProductDAO {
         }
         return productIds;
     }
+
+    @Override
+    public Product getProduct(String id) throws SQLException {
+        String sql = "select * from Product where Pro_Id=?";
+        ResultSet rs = SQLUtil.execute(sql, id);
+        return (rs.next()) ? new Product(rs.getString("Pro_Id"), rs.getString("Pro_Name"), rs.getDouble("Price"),rs.getInt("Qty")) : null;
+    }
 }
 
 

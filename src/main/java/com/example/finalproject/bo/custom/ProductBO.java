@@ -14,4 +14,5 @@ public interface ProductBO extends SuperBO {
     boolean update (ProductDTO Dto)throws SQLException;
     String getNextId() throws SQLException;
     List<String> getAllIds() throws SQLException;
+    ProductDTO getProduct(String id)throws SQLException;
 }

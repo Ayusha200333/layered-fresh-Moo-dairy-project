@@ -180,8 +180,8 @@ public class OrdersController implements Initializable {
 
         //qty -1
 
-
-        boolean isItSaved = productBO.update(new ProductDTO());
+        ProductDTO productDTO = productBO.getProduct(proId);
+        boolean isItSaved = productBO.update(productDTO);
         if(isItSaved){
             connection.commit();
             boolean isSaved = ordersBO.save(new OrdersDTO(orderId,proId,date,amount,cusID,payID,deliID,qty));

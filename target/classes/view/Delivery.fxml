@@ -15,22 +15,22 @@
    <children>
       <AnchorPane fx:id="ancDeli" prefHeight="766.0" prefWidth="1137.0" style="-fx-background-color: #e8e7bf;">
          <children>
-            <Label layoutX="39.0" layoutY="157.0" text="Delivery ID">
+            <Label layoutX="63.0" layoutY="126.0" text="Delivery ID">
                <font>
                   <Font name="DejaVuMathTeXGyre-Regular" size="21.0" />
                </font>
             </Label>
-            <Label layoutX="38.0" layoutY="212.0" text="Date">
+            <Label layoutX="63.0" layoutY="183.0" text="Date">
                <font>
                   <Font name="DejaVuMathTeXGyre-Regular" size="21.0" />
                </font>
             </Label>
-            <Label layoutX="36.0" layoutY="265.0" text="Destination">
+            <Label layoutX="60.0" layoutY="238.0" text="Destination">
                <font>
                   <Font name="DejaVuMathTeXGyre-Regular" size="21.0" />
                </font>
             </Label>
-            <TableView fx:id="tblDelivery" layoutX="35.0" layoutY="377.0" onMouseClicked="#onClickTable" prefHeight="365.0" prefWidth="1029.0">
+            <TableView fx:id="tblDelivery" layoutX="38.0" layoutY="340.0" onMouseClicked="#onClickTable" prefHeight="365.0" prefWidth="1029.0">
                <columns>
                   <TableColumn fx:id="colDeliveryId" prefWidth="75.0" text="Delivery ID" />
                   <TableColumn fx:id="colDeliDate" prefWidth="75.0" text="Date" />
@@ -40,7 +40,7 @@
                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                </columnResizePolicy>
             </TableView>
-            <Button fx:id="btnLoadDeli" layoutX="862.0" layoutY="185.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnLoadOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Load" textFill="WHITE">
+            <Button fx:id="btnLoadDeli" layoutX="791.0" layoutY="163.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnLoadOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Load" textFill="WHITE">
                <font>
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
@@ -48,7 +48,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="btnDeleteDeli" layoutX="862.0" layoutY="296.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Delete" textFill="WHITE">
+            <Button fx:id="btnDeleteDeli" layoutX="791.0" layoutY="277.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Delete" textFill="WHITE">
                <font>
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
@@ -56,7 +56,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="btnUpdateDeli" layoutX="862.0" layoutY="240.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Update" textFill="WHITE">
+            <Button fx:id="btnUpdateDeli" layoutX="791.0" layoutY="218.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Update" textFill="WHITE">
                <font>
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
@@ -64,7 +64,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="btnSaveDeli" layoutX="862.0" layoutY="128.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Save" textFill="WHITE">
+            <Button fx:id="btnSaveDeli" layoutX="791.0" layoutY="106.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Save" textFill="WHITE">
                <font>
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
@@ -72,9 +72,9 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <TextField fx:id="txtDeliID" layoutX="229.0" layoutY="159.0" prefHeight="26.0" prefWidth="324.0" promptText="field cannot be empty" />
-            <TextField fx:id="txtDeliDestination" layoutX="229.0" layoutY="267.0" prefHeight="26.0" prefWidth="324.0" />
-            <AnchorPane layoutY="22.0" prefHeight="57.0" prefWidth="1137.0" style="-fx-background-color: lightgray;">
+            <TextField fx:id="txtDeliID" layoutX="245.0" layoutY="128.0" prefHeight="26.0" prefWidth="324.0" promptText="field cannot be empty" />
+            <TextField fx:id="txtDeliDestination" layoutX="245.0" layoutY="240.0" prefHeight="26.0" prefWidth="324.0" />
+            <AnchorPane prefHeight="57.0" prefWidth="1137.0" style="-fx-background-color: lightgray;">
                <children>
                   <Text layoutX="443.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Details">
                      <font>
@@ -83,7 +83,7 @@
                   </Text>
                </children>
             </AnchorPane>
-            <DatePicker fx:id="dpDeliDate" layoutX="229.0" layoutY="214.0" prefHeight="26.0" prefWidth="324.0" />
+            <DatePicker fx:id="dpDeliDate" layoutX="245.0" layoutY="185.0" prefHeight="26.0" prefWidth="324.0" />
          </children>
       </AnchorPane>
    </children>

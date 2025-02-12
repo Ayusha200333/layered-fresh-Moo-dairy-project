@@ -12,11 +12,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="anc2" prefHeight="794.0" prefWidth="1901.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.controller.DashboardController">
+<AnchorPane fx:id="anc2" prefHeight="825.0" prefWidth="1812.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.controller.DashboardController">
    <children>
-      <AnchorPane layoutX="14.0" prefHeight="822.0" prefWidth="507.0" style="-fx-background-color: gray;">
+      <AnchorPane layoutX="-107.0" layoutY="-32.0" prefHeight="821.0" prefWidth="435.0" style="-fx-background-color: gray;">
          <children>
-            <Button fx:id="employeeBtn" layoutX="276.0" layoutY="141.0" mnemonicParsing="false" onAction="#navigateToEmployeePage" prefHeight="39.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="Employee">
+            <Button fx:id="employeeBtn" layoutX="159.0" layoutY="131.0" mnemonicParsing="false" onAction="#navigateToEmployeePage" prefHeight="39.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="Employee">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -24,7 +24,7 @@
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
             </Button>
-            <Button fx:id="customerBtn" layoutX="276.0" layoutY="195.0" mnemonicParsing="false" onAction="#navigateToCustomerPage" prefHeight="39.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="Customer">
+            <Button fx:id="customerBtn" layoutX="159.0" layoutY="185.0" mnemonicParsing="false" onAction="#navigateToCustomerPage" prefHeight="39.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="Customer">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -32,7 +32,7 @@
                   <Font name="DejaVu Serif Condensed Bold" size="19.0" />
                </font>
             </Button>
-            <Button fx:id="deliveryBtn" layoutX="276.0" layoutY="294.0" mnemonicParsing="false" onAction="#navigateToDeliveryPage" prefHeight="39.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="Delivery">
+            <Button fx:id="deliveryBtn" layoutX="159.0" layoutY="284.0" mnemonicParsing="false" onAction="#navigateToDeliveryPage" prefHeight="39.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="Delivery">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -40,7 +40,7 @@
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
             </Button>
-            <Button fx:id="prdCategeryBtn" layoutX="276.0" layoutY="343.0" mnemonicParsing="false" onAction="#navigateToPrdCategoryPage" prefHeight="39.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="     Product Category">
+            <Button fx:id="prdCategeryBtn" layoutX="159.0" layoutY="333.0" mnemonicParsing="false" onAction="#navigateToPrdCategoryPage" prefHeight="39.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="     Product Category">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -48,7 +48,7 @@
                   <Font name="DejaVu Serif Condensed Bold" size="17.0" />
                </font>
             </Button>
-            <Button fx:id="inventBtn" layoutX="276.0" layoutY="389.0" mnemonicParsing="false" onAction="#navigateToInventoryPage" prefHeight="39.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="Inventory">
+            <Button fx:id="inventBtn" layoutX="159.0" layoutY="379.0" mnemonicParsing="false" onAction="#navigateToInventoryPage" prefHeight="39.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="Inventory">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -56,7 +56,7 @@
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
             </Button>
-            <Button fx:id="returnBtn" layoutX="276.0" layoutY="443.0" mnemonicParsing="false" onAction="#navigateToReturnDetailPage" prefHeight="30.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="Return">
+            <Button fx:id="returnBtn" layoutX="159.0" layoutY="433.0" mnemonicParsing="false" onAction="#navigateToReturnDetailPage" prefHeight="30.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="Return">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -64,7 +64,7 @@
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
             </Button>
-            <Button fx:id="productBtn" layoutX="276.0" layoutY="496.0" mnemonicParsing="false" onAction="#productOnAction" prefHeight="39.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="Product">
+            <Button fx:id="productBtn" layoutX="159.0" layoutY="486.0" mnemonicParsing="false" onAction="#productOnAction" prefHeight="39.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="Product">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -72,7 +72,7 @@
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
             </Button>
-            <Button fx:id="orderBtn" layoutX="276.0" layoutY="547.0" mnemonicParsing="false" onAction="#navigateToIOrdersPage" prefHeight="39.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="Orders">
+            <Button fx:id="orderBtn" layoutX="159.0" layoutY="537.0" mnemonicParsing="false" onAction="#navigateToIOrdersPage" prefHeight="39.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="Orders">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -80,7 +80,7 @@
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
             </Button>
-            <Button fx:id="batchBtn" layoutX="276.0" layoutY="600.0" mnemonicParsing="false" onAction="#navigateToBatchPage" prefHeight="39.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="Batch">
+            <Button fx:id="batchBtn" layoutX="159.0" layoutY="589.0" mnemonicParsing="false" onAction="#navigateToBatchPage" prefHeight="39.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="Batch">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -88,7 +88,7 @@
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
             </Button>
-            <Button fx:id="supplierBtn" layoutX="276.0" layoutY="652.0" mnemonicParsing="false" onAction="#navigateToSupplierPage" prefHeight="39.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="Supplier">
+            <Button fx:id="supplierBtn" layoutX="159.0" layoutY="641.0" mnemonicParsing="false" onAction="#navigateToSupplierPage" prefHeight="39.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="Supplier">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -96,7 +96,7 @@
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
             </Button>
-            <Button fx:id="paymentBtn" layoutX="276.0" layoutY="242.0" mnemonicParsing="false" onAction="#navigateToPaymentPage" prefHeight="39.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="Payment">
+            <Button fx:id="paymentBtn" layoutX="159.0" layoutY="232.0" mnemonicParsing="false" onAction="#navigateToPaymentPage" prefHeight="39.0" prefWidth="206.0" style="-fx-background-radius: 20px;" text="Payment">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -104,7 +104,7 @@
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
             </Button>
-            <Text layoutX="277.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Freshmoo">
+            <Text layoutX="160.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Freshmoo">
                <font>
                   <Font name="Copperplate Gothic Bold" size="36.0" />
                </font>
@@ -125,62 +125,62 @@
                   </LinearGradient>
                </fill>
             </Text>
-            <ImageView fitHeight="30.0" fitWidth="32.0" layoutX="287.0" layoutY="148.0">
+            <ImageView fitHeight="30.0" fitWidth="32.0" layoutX="170.0" layoutY="138.0">
                <image>
                   <Image url="@../image/icons8-employee-50.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="292.0" layoutY="204.0">
+            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="175.0" layoutY="194.0">
                <image>
                   <Image url="@../image/icons8-customer-30.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="296.0" layoutY="253.0">
+            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="179.0" layoutY="243.0">
                <image>
                   <Image url="@../image/icons8-payment-30.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="296.0" layoutY="305.0">
+            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="179.0" layoutY="295.0">
                <image>
                   <Image url="@../image/icons8-delivery-50.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="296.0" layoutY="351.0">
+            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="179.0" layoutY="341.0">
                <image>
                   <Image url="@../image/icons8-product-category-32.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="296.0" layoutY="400.0">
+            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="179.0" layoutY="390.0">
                <image>
                   <Image url="@../image/icons8-inventory-30.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="296.0" layoutY="454.0">
+            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="179.0" layoutY="444.0">
                <image>
                   <Image url="@../image/icons8-return-50.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="292.0" layoutY="507.0">
+            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="175.0" layoutY="497.0">
                <image>
                   <Image url="@../image/icons8-product-30.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="292.0" layoutY="558.0">
+            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="175.0" layoutY="548.0">
                <image>
                   <Image url="@../image/icons8-order-50.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="292.0" layoutY="611.0">
+            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="175.0" layoutY="600.0">
                <image>
                   <Image url="@../image/icons8-batch-30.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="292.0" layoutY="663.0">
+            <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="175.0" layoutY="652.0">
                <image>
                   <Image url="@../image/icons8-supplier-48.png" />
                </image>
             </ImageView>
-            <Button layoutX="320.0" layoutY="721.0" mnemonicParsing="false" onAction="#logOutOnAction" prefHeight="30.0" prefWidth="119.0" style="-fx-background-color: #754e4e;" text="Log Out" textFill="WHITE">
+            <Button layoutX="202.0" layoutY="710.0" mnemonicParsing="false" onAction="#logOutOnAction" prefHeight="30.0" prefWidth="119.0" style="-fx-background-color: #754e4e;" text="Log Out" textFill="WHITE">
                <font>
                   <Font name="DejaVu Sans Bold" size="16.0" />
                </font>
@@ -190,14 +190,14 @@
             </Button>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="abcd" layoutX="521.0" layoutY="-14.0" prefHeight="830.0" prefWidth="1380.0" style="-fx-background-color: #e8eeb7;">
+      <AnchorPane fx:id="abcd" layoutX="293.0" prefHeight="821.0" prefWidth="1380.0" style="-fx-background-color: #e8eeb7;">
          <children>
             <Text layoutX="342.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Freshmoo Dairy Products Shop">
                <font>
                   <Font name="Chilanka Regular" size="33.0" />
                </font>
             </Text>
-            <AnchorPane layoutX="3.0" layoutY="618.0" prefHeight="188.0" prefWidth="1374.0" style="-fx-background-color: white;">
+            <AnchorPane layoutY="556.0" prefHeight="188.0" prefWidth="1374.0" style="-fx-background-color: white;">
                <children>
                   <Label layoutX="261.0" layoutY="67.0" prefHeight="55.0" prefWidth="733.0" text="Freshmoo Dairy Products Is truly a sriLankan Brand trusted by generations. ">
                      <font>
@@ -228,7 +228,7 @@
                         <Font name="System Bold" size="19.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="131.0" layoutY="25.0">
+                  <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="142.0" layoutY="25.0">
                      <image>
                         <Image url="@../image/icons8-customer-30(1).png" />
                      </image>
@@ -311,6 +311,7 @@
                   </ImageView>
                </children>
             </AnchorPane>
-         </children></AnchorPane>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

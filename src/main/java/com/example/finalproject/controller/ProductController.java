@@ -170,6 +170,7 @@ public class ProductController implements Initializable {
 
         ProductDTO productDto = new ProductDTO(proId, proName, price, qty);
 
+
         boolean isUpdate = productBO.update(productDto);
         if(isUpdate){
             new Alert(Alert.AlertType.INFORMATION, "Product updated successfully").show();

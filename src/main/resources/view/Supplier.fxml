@@ -14,22 +14,22 @@
    <children>
       <AnchorPane fx:id="ancSupplier1" prefHeight="776.0" prefWidth="1137.0" style="-fx-background-color: #e8e7bf;">
          <children>
-            <Label layoutX="51.0" layoutY="165.0" prefWidth="150.0" text="Supplier Id">
+            <Label layoutX="59.0" layoutY="123.0" prefWidth="150.0" text="Supplier Id">
                <font>
                   <Font name="DejaVuMathTeXGyre-Regular" size="21.0" />
                </font>
             </Label>
-            <Label layoutX="51.0" layoutY="218.0" prefWidth="150.0" text="Name">
+            <Label layoutX="59.0" layoutY="181.0" prefWidth="150.0" text="Name">
                <font>
                   <Font name="DejaVuMathTeXGyre-Regular" size="21.0" />
                </font>
             </Label>
-            <Label layoutX="51.0" layoutY="270.0" prefWidth="150.0" text="Phone">
+            <Label layoutX="59.0" layoutY="241.0" prefWidth="150.0" text="Phone">
                <font>
                   <Font name="DejaVuMathTeXGyre-Regular" size="21.0" />
                </font>
             </Label>
-            <Button fx:id="btnSaveSupplier" layoutX="796.0" layoutY="130.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Save" textFill="WHITE">
+            <Button fx:id="btnSaveSupplier" layoutX="796.0" layoutY="102.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Save" textFill="WHITE">
                <font>
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
@@ -37,7 +37,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="btnUpdateSupplier" layoutX="796.0" layoutY="234.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Update" textFill="WHITE">
+            <Button fx:id="btnUpdateSupplier" layoutX="796.0" layoutY="204.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Update" textFill="WHITE">
                <font>
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
@@ -45,7 +45,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="btnDeleteSupplier" layoutX="796.0" layoutY="286.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Delete" textFill="WHITE">
+            <Button fx:id="btnDeleteSupplier" layoutX="796.0" layoutY="257.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Delete" textFill="WHITE">
                <font>
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
@@ -53,7 +53,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <TableView fx:id="tblSupplier" layoutX="37.0" layoutY="364.0" onMouseClicked="#onClickTable" prefHeight="381.0" prefWidth="1004.0">
+            <TableView fx:id="tblSupplier" layoutX="40.0" layoutY="330.0" onMouseClicked="#onClickTable" prefHeight="381.0" prefWidth="1004.0">
                <columns>
                   <TableColumn fx:id="colSupplierId" prefWidth="75.0" text="Supplier Id" />
                   <TableColumn fx:id="colSuppName" prefWidth="75.0" text="Name" />
@@ -63,10 +63,10 @@
                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                </columnResizePolicy>
             </TableView>
-            <TextField fx:id="txtSuppName" layoutX="209.0" layoutY="219.0" prefHeight="28.0" prefWidth="393.0" />
-            <TextField fx:id="txtSupPhone" layoutX="209.0" layoutY="271.0" prefHeight="28.0" prefWidth="393.0" promptText="0777777777" />
-            <TextField fx:id="txtSupplierId" layoutX="209.0" layoutY="166.0" prefHeight="28.0" prefWidth="393.0" />
-            <Button fx:id="btnLoadSupplier" layoutX="796.0" layoutY="181.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnLoadOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Load" textFill="#fcfcfc">
+            <TextField fx:id="txtSuppName" layoutX="221.0" layoutY="182.0" prefHeight="28.0" prefWidth="393.0" />
+            <TextField fx:id="txtSupPhone" layoutX="221.0" layoutY="242.0" prefHeight="28.0" prefWidth="393.0" promptText="0777777777" />
+            <TextField fx:id="txtSupplierId" layoutX="221.0" layoutY="124.0" prefHeight="28.0" prefWidth="393.0" />
+            <Button fx:id="btnLoadSupplier" layoutX="796.0" layoutY="154.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnLoadOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Load" textFill="#fcfcfc">
                <font>
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
@@ -74,7 +74,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <AnchorPane layoutY="24.0" prefHeight="51.0" prefWidth="1137.0" style="-fx-background-color: lightgray;">
+            <AnchorPane prefHeight="51.0" prefWidth="1137.0" style="-fx-background-color: lightgray;">
                <children>
                   <Text blendMode="COLOR_BURN" layoutX="457.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suppler Details">
                      <font>

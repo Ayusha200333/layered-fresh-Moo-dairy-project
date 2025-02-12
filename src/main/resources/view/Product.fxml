@@ -14,37 +14,37 @@
    <children>
       <AnchorPane fx:id="ancProduct" prefHeight="762.0" prefWidth="1137.0" style="-fx-background-color: #e8e7bf;">
          <children>
-            <Label layoutX="57.0" layoutY="118.0" prefWidth="150.0" text="Product Id">
+            <Label layoutX="71.0" layoutY="103.0" prefWidth="150.0" text="Product Id">
                <font>
                   <Font name="DejaVuMathTeXGyre-Regular" size="21.0" />
                </font>
             </Label>
-            <Label layoutX="57.0" layoutY="173.0" prefWidth="150.0" text="Name">
+            <Label layoutX="71.0" layoutY="158.0" prefWidth="150.0" text="Name">
                <font>
                   <Font name="DejaVuMathTeXGyre-Regular" size="21.0" />
                </font>
             </Label>
-            <Label layoutX="57.0" layoutY="228.0" prefWidth="150.0" text="Price">
+            <Label layoutX="71.0" layoutY="213.0" prefWidth="150.0" text="Price">
                <font>
                   <Font name="DejaVuMathTeXGyre-Regular" size="21.0" />
                </font>
             </Label>
-            <TextField fx:id="txtProductId" layoutX="199.0" layoutY="119.0" prefHeight="29.0" prefWidth="391.0" promptText=" " style="-fx-background-color: #fff; -fx-border-color: #7367F0; -fx-border-width: 0 0 1px 0;">
+            <TextField fx:id="txtProductId" layoutX="207.0" layoutY="104.0" prefHeight="29.0" prefWidth="391.0" promptText=" " style="-fx-background-color: #fff; -fx-border-color: #7367F0; -fx-border-width: 0 0 1px 0;">
                <font>
                   <Font name="Calibri" size="14.0" />
                </font>
             </TextField>
-            <TextField fx:id="txtProductName" layoutX="199.0" layoutY="174.0" prefHeight="29.0" prefWidth="391.0" promptText=" " style="-fx-background-color: #fff; -fx-border-color: #7367F0; -fx-border-width: 0 0 1px 0;">
+            <TextField fx:id="txtProductName" layoutX="207.0" layoutY="159.0" prefHeight="29.0" prefWidth="391.0" promptText=" " style="-fx-background-color: #fff; -fx-border-color: #7367F0; -fx-border-width: 0 0 1px 0;">
                <font>
                   <Font name="Calibri" size="14.0" />
                </font>
             </TextField>
-            <TextField fx:id="txtProductPrice" layoutX="199.0" layoutY="229.0" prefHeight="29.0" prefWidth="391.0" promptText=" " style="-fx-background-color: #fff; -fx-border-color: #7367F0; -fx-border-width: 0 0 1px 0;">
+            <TextField fx:id="txtProductPrice" layoutX="207.0" layoutY="214.0" prefHeight="29.0" prefWidth="391.0" promptText=" " style="-fx-background-color: #fff; -fx-border-color: #7367F0; -fx-border-width: 0 0 1px 0;">
                <font>
                   <Font name="Calibri" size="14.0" />
                </font>
             </TextField>
-            <Button fx:id="btnDeleteProduct" layoutX="835.0" layoutY="287.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Delete" textFill="WHITE">
+            <Button fx:id="btnDeleteProduct" layoutX="835.0" layoutY="266.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Delete" textFill="WHITE">
                <font>
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
@@ -52,7 +52,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="btnUpdateProduct" layoutX="835.0" layoutY="228.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Update" textFill="WHITE">
+            <Button fx:id="btnUpdateProduct" layoutX="835.0" layoutY="213.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Update" textFill="WHITE">
                <font>
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
@@ -68,7 +68,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <TableView fx:id="tblProduct" layoutX="57.0" layoutY="366.0" onMouseClicked="#onClickTable" prefHeight="369.0" prefWidth="1023.0">
+            <TableView fx:id="tblProduct" layoutX="57.0" layoutY="352.0" onMouseClicked="#onClickTable" prefHeight="369.0" prefWidth="1023.0">
                <columns>
                   <TableColumn fx:id="colProductId" prefWidth="134.0" text="Product Id" />
                   <TableColumn fx:id="colName" prefWidth="317.0" text="Name" />
@@ -79,7 +79,7 @@
                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                </columnResizePolicy>
             </TableView>
-            <Button fx:id="btnLoadProduct" layoutX="835.0" layoutY="166.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnLoadOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Load" textFill="WHITE">
+            <Button fx:id="btnLoadProduct" layoutX="835.0" layoutY="159.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnLoadOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Load" textFill="WHITE">
                <font>
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
@@ -87,7 +87,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <AnchorPane layoutY="22.0" prefHeight="58.0" prefWidth="1137.0" style="-fx-background-color: lightgray;">
+            <AnchorPane prefHeight="58.0" prefWidth="1137.0" style="-fx-background-color: lightgray;">
                <children>
                   <Text layoutX="444.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Details">
                      <font>
@@ -96,12 +96,12 @@
                   </Text>
                </children>
             </AnchorPane>
-            <Label layoutX="57.0" layoutY="276.0" prefHeight="26.0" prefWidth="123.0" text="Qty">
+            <Label layoutX="71.0" layoutY="272.0" prefHeight="26.0" prefWidth="123.0" text="Qty">
                <font>
                   <Font name="DejaVuMathTeXGyre-Regular" size="21.0" />
                </font>
             </Label>
-            <TextField fx:id="txtQty" layoutX="199.0" layoutY="277.0" prefHeight="29.0" prefWidth="391.0" promptText=" " style="-fx-background-color: #fff; -fx-border-color: #7367F0; -fx-border-width: 0 0 1px 0;">
+            <TextField fx:id="txtQty" layoutX="207.0" layoutY="273.0" prefHeight="29.0" prefWidth="391.0" promptText=" " style="-fx-background-color: #fff; -fx-border-color: #7367F0; -fx-border-width: 0 0 1px 0;">
                <font>
                   <Font name="Calibri" size="14.0" />
                </font>

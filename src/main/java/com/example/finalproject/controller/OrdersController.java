@@ -96,15 +96,6 @@ public class OrdersController implements Initializable {
     @FXML
     private Button btnUpdate;
 
-//    OrdersDAOImpl ordersModel = new OrdersDAOImpl();
-//    ProductDAOImpl productModel = new ProductDAOImpl();
-//    CustomerDAOImpl customerModel = new CustomerDAOImpl();
-//    PaymentDAOImpl paymentModel = new PaymentDAOImpl();
-//    DeliveryDAOImpl deliveryModel = new DeliveryDAOImpl();
-//    OrderDetailDAOImpl orderDetailModel = new OrderDetailDAOImpl();
-//
-//    OrdersDAO ordersDAO = new OrdersDAOImpl();
-
     OrdersBO ordersBO = (OrdersBO) BOFactory.getInstance().getBO(BOFactory.BOType.ORDERS);
     DeliveryBO deliveryBO = (DeliveryBO) BOFactory.getInstance().getBO(BOFactory.BOType.DELIVERY);
     ProductBO productBO = (ProductBO) BOFactory.getInstance().getBO(BOFactory.BOType.PRODUCT);
@@ -145,7 +136,7 @@ public class OrdersController implements Initializable {
         btnSave.setDisable(false);
         btnShow.setDisable(false);
         loadNextOrderId();
-}
+    }
 
     private void refreshPage() throws SQLException {
         loadNextOrderId();
@@ -176,9 +167,6 @@ public class OrdersController implements Initializable {
         String deliID = cbDeliId.getValue().toString();
         int qty = Integer.parseInt(txtQty.getText());
 
-//        OrdersDTO ordersDTO =
-
-        //qty -1
 
         ProductDTO productDTO = productBO.getProduct(proId);
         boolean isItSaved = productBO.update(productDTO);
@@ -243,10 +231,8 @@ public class OrdersController implements Initializable {
 
 
 
-
-
-@FXML
-void btnUpdateOnClickTo(ActionEvent event) throws SQLException {
+    @FXML
+    void btnUpdateOnClickTo(ActionEvent event) throws SQLException {
         Connection connection = DBConnection.getInstance().getConnection();
         connection.setAutoCommit(false);
 
@@ -295,33 +281,33 @@ void btnUpdateOnClickTo(ActionEvent event) throws SQLException {
 
     public void loadNextOrderId() throws SQLException {
 
-            String nextOrderId = ordersBO.getNextId();
-            txtOrdID.setText(nextOrderId);
+        String nextOrderId = ordersBO.getNextId();
+        txtOrdID.setText(nextOrderId);
     }
 
-        @Override
-        public void initialize(URL url, ResourceBundle resources) {
-            colOrderId.setCellValueFactory(new PropertyValueFactory<>("orderId"));
-            colProId.setCellValueFactory(new PropertyValueFactory<>("productId"));
-            colDate.setCellValueFactory(new PropertyValueFactory<>("date"));
-            colAmount.setCellValueFactory(new PropertyValueFactory<>("amount"));
-            colCusId.setCellValueFactory(new PropertyValueFactory<>("cusId"));
-            colPaymentID.setCellValueFactory(new PropertyValueFactory<>("paymentId"));
-            colDeliId.setCellValueFactory(new PropertyValueFactory<>("deliveryId"));
-            colQty.setCellValueFactory(new PropertyValueFactory<>("qty"));
+    @Override
+    public void initialize(URL url, ResourceBundle resources) {
+        colOrderId.setCellValueFactory(new PropertyValueFactory<>("orderId"));
+        colProId.setCellValueFactory(new PropertyValueFactory<>("productId"));
+        colDate.setCellValueFactory(new PropertyValueFactory<>("date"));
+        colAmount.setCellValueFactory(new PropertyValueFactory<>("amount"));
+        colCusId.setCellValueFactory(new PropertyValueFactory<>("cusId"));
+        colPaymentID.setCellValueFactory(new PropertyValueFactory<>("paymentId"));
+        colDeliId.setCellValueFactory(new PropertyValueFactory<>("deliveryId"));
+        colQty.setCellValueFactory(new PropertyValueFactory<>("qty"));
 
-            try{
-                loadProductIdsIntoChoiceBox();
-                loadCustomerIdsIntoChoiceBox();
-                loadPaymentIdsIntoChoiceBox();
-                loadDeliveryIdsIntoChoiceBox();
+        try{
+            loadProductIdsIntoChoiceBox();
+            loadCustomerIdsIntoChoiceBox();
+            loadPaymentIdsIntoChoiceBox();
+            loadDeliveryIdsIntoChoiceBox();
 
-                loadNextOrderId();
-            }catch (SQLException e) {
-                e.printStackTrace();
-                Alert alert = new Alert(Alert.AlertType.ERROR,"Error Loading next Order Id");
-            }
+            loadNextOrderId();
+        }catch (SQLException e) {
+            e.printStackTrace();
+            Alert alert = new Alert(Alert.AlertType.ERROR,"Error Loading next Order Id");
         }
+    }
 
     private void loadDeliveryIdsIntoChoiceBox() throws SQLException {
         List<String> deliveryIds = deliveryBO.getAllIds();

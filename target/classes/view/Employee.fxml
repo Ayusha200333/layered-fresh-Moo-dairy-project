@@ -12,27 +12,27 @@
 
 <AnchorPane onMouseClicked="#onClickTable" prefHeight="747.0" prefWidth="1137.0" style="-fx-background-color: #e8e7bf;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.controller.EmployeeController">
    <children>
-      <Label layoutX="33.0" layoutY="152.0" text="Employee ID">
+      <Label layoutX="56.0" layoutY="123.0" text="Employee ID">
          <font>
             <Font name="DejaVuMathTeXGyre-Regular" size="21.0" />
          </font>
       </Label>
-      <Label layoutX="35.0" layoutY="198.0" text="Employee Name ">
+      <Label layoutX="56.0" layoutY="168.0" text="Employee Name ">
          <font>
             <Font name="DejaVuMathTeXGyre-Regular" size="21.0" />
          </font>
       </Label>
-      <Label layoutX="35.0" layoutY="242.0" text="Salary">
+      <Label layoutX="56.0" layoutY="214.0" text="Salary">
          <font>
             <Font name="DejaVuMathTeXGyre-Regular" size="21.0" />
          </font>
       </Label>
-      <Label layoutX="35.0" layoutY="290.0" text="Phone Number">
+      <Label layoutX="56.0" layoutY="264.0" text="Phone Number">
          <font>
             <Font name="DejaVuMathTeXGyre-Regular" size="21.0" />
          </font>
       </Label>
-      <Button fx:id="btnLoadEmp" layoutX="853.0" layoutY="176.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnLoadOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Load" textFill="WHITE">
+      <Button fx:id="btnLoadEmp" layoutX="822.0" layoutY="161.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnLoadOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Load" textFill="WHITE">
          <font>
             <Font name="DejaVu Serif Condensed Bold" size="20.0" />
          </font>
@@ -40,7 +40,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="btnDeleteEmp" layoutX="853.0" layoutY="292.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Delete" textFill="WHITE">
+      <Button fx:id="btnDeleteEmp" layoutX="822.0" layoutY="280.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Delete" textFill="WHITE">
          <font>
             <Font name="DejaVu Serif Condensed Bold" size="20.0" />
          </font>
@@ -48,7 +48,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="btnUpdateEmp" layoutX="853.0" layoutY="235.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Update" textFill="WHITE">
+      <Button fx:id="btnUpdateEmp" layoutX="822.0" layoutY="220.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Update" textFill="WHITE">
          <font>
             <Font name="DejaVu Serif Condensed Bold" size="20.0" />
          </font>
@@ -56,7 +56,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="btnSaveEmp" layoutX="853.0" layoutY="116.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Save" textFill="WHITE">
+      <Button fx:id="btnSaveEmp" layoutX="822.0" layoutY="101.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Save" textFill="WHITE">
          <font>
             <Font name="DejaVu Serif Condensed Bold" size="20.0" />
          </font>
@@ -64,11 +64,11 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <TextField fx:id="txtEmpName" layoutX="246.0" layoutY="200.0" prefHeight="26.0" prefWidth="313.0" />
-      <TextField fx:id="txtEmpSalary" layoutX="246.0" layoutY="244.0" prefHeight="26.0" prefWidth="313.0" />
-      <TextField fx:id="txtEmpPhone" layoutX="246.0" layoutY="292.0" prefHeight="26.0" prefWidth="313.0" />
-      <TextField fx:id="txtEmpId" layoutX="246.0" layoutY="154.0" prefHeight="26.0" prefWidth="313.0" />
-      <AnchorPane fx:id="ancEmployee" layoutY="28.0" prefHeight="60.0" prefWidth="1137.0" style="-fx-background-color: lightgray;">
+      <TextField fx:id="txtEmpName" layoutX="271.0" layoutY="170.0" prefHeight="26.0" prefWidth="313.0" />
+      <TextField fx:id="txtEmpSalary" layoutX="271.0" layoutY="216.0" prefHeight="26.0" prefWidth="313.0" />
+      <TextField fx:id="txtEmpPhone" layoutX="271.0" layoutY="266.0" prefHeight="26.0" prefWidth="313.0" />
+      <TextField fx:id="txtEmpId" layoutX="271.0" layoutY="125.0" prefHeight="26.0" prefWidth="313.0" />
+      <AnchorPane fx:id="ancEmployee" prefHeight="60.0" prefWidth="1137.0" style="-fx-background-color: lightgray;">
          <children>
             <Text layoutX="443.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Details">
                <font>
@@ -77,7 +77,7 @@
             </Text>
          </children>
       </AnchorPane>
-      <TableView fx:id="tblEmployee" layoutX="27.0" layoutY="394.0" onMouseClicked="#onClickTable" prefHeight="331.0" prefWidth="1042.0">
+      <TableView fx:id="tblEmployee" layoutX="26.0" layoutY="356.0" onMouseClicked="#onClickTable" prefHeight="331.0" prefWidth="1042.0">
         <columns>
           <TableColumn fx:id="colEmpId" prefWidth="188.33334350585938" text="Employee Id" />
           <TableColumn fx:id="colEmName" prefWidth="235.66665649414062" text="Employee Name" />

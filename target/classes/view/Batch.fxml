@@ -16,29 +16,29 @@
    <children>
       <AnchorPane fx:id="ancBatch" prefHeight="770.0" prefWidth="1135.0" style="-fx-background-color: #e8e7bf;">
          <children>
-            <Label layoutX="42.0" layoutY="146.0" prefWidth="150.0" text="Batch Id">
+            <Label layoutX="54.0" layoutY="120.0" prefWidth="150.0" text="Batch Id">
                <font>
                   <Font name="DejaVuMathTeXGyre-Regular" size="21.0" />
                </font>
             </Label>
             <HBox alignment="CENTER_LEFT" layoutX="173.0" layoutY="93.0" prefHeight="27.2" />
-            <TextField fx:id="txtPrice" layoutX="204.0" layoutY="213.0" prefHeight="29.0" prefWidth="393.0" style="-fx-background-color: #fff; -fx-border-color: #7367F0; -fx-border-width: 0 0 1px 0;">
+            <TextField fx:id="txtPrice" layoutX="204.0" layoutY="177.0" prefHeight="29.0" prefWidth="393.0" style="-fx-background-color: #fff; -fx-border-color: #7367F0; -fx-border-width: 0 0 1px 0;">
                <font>
                   <Font name="Calibri" size="14.0" />
                </font>
             </TextField>
-            <Label layoutX="42.0" layoutY="212.0" prefWidth="150.0" text="Price">
+            <Label layoutX="54.0" layoutY="176.0" prefWidth="150.0" text="Price">
                <font>
                   <Font name="DejaVuMathTeXGyre-Regular" size="21.0" />
                </font>
             </Label>
             <HBox alignment="CENTER_LEFT" layoutX="-59.0" layoutY="198.0" />
-            <Label layoutX="42.0" layoutY="276.0" prefWidth="150.0" text="Product Id">
+            <Label layoutX="54.0" layoutY="228.0" prefWidth="150.0" text="Product Id">
                <font>
                   <Font name="DejaVuMathTeXGyre-Regular" size="21.0" />
                </font>
             </Label>
-            <Button fx:id="btnDeleteBatch" layoutX="855.0" layoutY="270.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="29.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Delete" textFill="WHITE">
+            <Button fx:id="btnDeleteBatch" layoutX="832.0" layoutY="237.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="29.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Delete" textFill="WHITE">
                <font>
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
@@ -46,7 +46,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="btnUpdateBatch" layoutX="855.0" layoutY="213.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="29.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Update" textFill="WHITE">
+            <Button fx:id="btnUpdateBatch" layoutX="832.0" layoutY="185.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="29.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Update" textFill="WHITE">
                <font>
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
@@ -54,7 +54,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="btnSaveBatch" layoutX="855.0" layoutY="99.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Save" textFill="WHITE">
+            <Button fx:id="btnSaveBatch" layoutX="832.0" layoutY="85.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Save" textFill="WHITE">
                <font>
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
@@ -62,7 +62,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <TableView fx:id="tblBatch" layoutX="30.0" layoutY="350.0" onMouseClicked="#onClickBatchTable" prefHeight="392.0" prefWidth="1024.0">
+            <TableView fx:id="tblBatch" layoutX="38.0" layoutY="300.0" onMouseClicked="#onClickBatchTable" prefHeight="392.0" prefWidth="1024.0">
                <columns>
                   <TableColumn fx:id="colBatchId" prefWidth="75.0" text="Batch Id" />
                   <TableColumn fx:id="colPrice" prefWidth="75.0" text="Price" />
@@ -72,21 +72,21 @@
                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                </columnResizePolicy>
             </TableView>
-            <TextField fx:id="txtBatchId" layoutX="204.0" layoutY="147.0" prefHeight="29.0" prefWidth="393.0" style="-fx-background-color: #fff; -fx-border-color: #7367F0; -fx-border-width: 0 0 1px 0;">
+            <TextField fx:id="txtBatchId" layoutX="204.0" layoutY="121.0" prefHeight="29.0" prefWidth="393.0" style="-fx-background-color: #fff; -fx-border-color: #7367F0; -fx-border-width: 0 0 1px 0;">
                <font>
                   <Font name="Calibri" size="14.0" />
                </font>
             </TextField>
-            <AnchorPane layoutY="29.0" prefHeight="51.0" prefWidth="1137.0" style="-fx-background-color: lightgray;">
+            <AnchorPane prefHeight="51.0" prefWidth="1137.0" style="-fx-background-color: lightgray;">
                <children>
-                  <Text layoutX="452.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Batch Details">
+                  <Text layoutX="453.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Batch Details">
                      <font>
                         <Font name="Rasa Medium" size="37.0" />
                      </font>
                   </Text>
                </children>
             </AnchorPane>
-            <Button fx:id="btnLoadBatch" layoutX="855.0" layoutY="155.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnLoadOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Load" textFill="WHITE">
+            <Button fx:id="btnLoadBatch" layoutX="832.0" layoutY="136.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnLoadOnAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: gray;" text="Load" textFill="WHITE">
                <font>
                   <Font name="DejaVu Serif Condensed Bold" size="20.0" />
                </font>
@@ -94,7 +94,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <ChoiceBox fx:id="cbProId" layoutX="204.0" layoutY="277.0" prefHeight="29.0" prefWidth="393.0" />
+            <ChoiceBox fx:id="cbProId" layoutX="204.0" layoutY="229.0" prefHeight="29.0" prefWidth="393.0" />
          </children>
       </AnchorPane>
    </children>

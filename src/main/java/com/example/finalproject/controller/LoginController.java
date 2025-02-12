@@ -32,7 +32,7 @@ public class LoginController {
 
         if(isSaved == true){
             anc1.getChildren().clear();
-            AnchorPane load = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/Login.fxml")));
+            AnchorPane load = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/Dashboard.fxml")));
             anc1.getChildren().add(load);
         }else{
             new Alert(Alert.AlertType.ERROR,"Invalid Email or Password").show();
